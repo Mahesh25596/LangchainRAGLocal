@@ -35,5 +35,5 @@ A Python-based document search system that uses HuggingFace embeddings and Chrom
 4. Query the database
 
     ```bash
-    python query_data.py "List AWS Skillsets"
+    python query_data.py "List AWS Skillsets" > output.txt
     ```
