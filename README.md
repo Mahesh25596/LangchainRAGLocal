@@ -19,8 +19,8 @@ A Python-based document search system that uses HuggingFace embeddings and Chrom
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/document-search.git
-   cd document-search
+   git clone https://github.com/Mahesh25596/LangchainRAGLocal.git
+   cd LangchainRAGLocal
 
 2. Install Dependencies
 
