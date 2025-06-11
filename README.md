@@ -4,7 +4,7 @@ A complete local Retrieval-Augmented Generation (RAG) pipeline using LangChain, 
 
 ## Features
 
-- - 📂 **Document Processing**  
+- 📂 **Document Processing**  
   Load and process PDF/markdown documents with configurable text splitting
 - ✂️ **Chunk Optimization**  
   Intelligent text splitting with overlap for context preservation
