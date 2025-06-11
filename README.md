@@ -1,19 +1,27 @@
-# LangchainRAGLocal - Local Document Search with LangChain and ChromaDB
+# LangchainRAGLocal - Local RAG System with Ollama and ChromaDB
 
-A Python-based document search system that uses HuggingFace embeddings and ChromaDB for efficient local document query retrieval.
+A complete local Retrieval-Augmented Generation (RAG) pipeline using LangChain, ChromaDB, and Ollama for private document search and question answering.
 
 ## Features
 
-- 📂 Load and process markdown documents from a directory
-- ✂️ Intelligent text splitting with configurable chunk sizes
-- 🔍 Semantic search using HuggingFace's `all-MiniLM-L6-v2` embeddings
-- 💾 Persistent vector storage with ChromaDB
-- 🖥️ Command-line query interface
+- - 📂 **Document Processing**  
+  Load and process PDF/markdown documents with configurable text splitting
+- ✂️ **Chunk Optimization**  
+  Intelligent text splitting with overlap for context preservation
+- 🔍 **Semantic Search**  
+  HuggingFace `all-MiniLM-L6-v2` embeddings for accurate retrieval
+- 🤖 **Local LLM Integration**  
+  Ollama-powered responses with models like LLaMA2/Mistral
+- 💾 **Persistent Storage**  
+  ChromaDB vector store for efficient document retrieval
+- 🖥️ **CLI Interface**  
+  Simple command-line query system with output redirection
 
 ## Prerequisites
 
 - Python 3.8+
-- pip package manager
+- 8GB+ RAM (16GB recommended for larger models)
+- Ollama installed (for local LLM)
 
 ## Installation
 
@@ -21,10 +29,13 @@ A Python-based document search system that uses HuggingFace embeddings and Chrom
    ```bash
    git clone https://github.com/Mahesh25596/LangchainRAGLocal.git
    cd LangchainRAGLocal
+   ```
 
 2. Install Dependencies
 
     ```bash
+    winget install Ollama.Ollama
+    ollama pull llama2
     pip install -r requirements.txt
     ```
 
